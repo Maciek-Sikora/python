@@ -6,21 +6,23 @@ window.geometry("800x600")
 
 alfa = ["s"]
 
-def losoweRucha():
-    losoweRuch()
-    spr1()
-def losoweRucha():
-    losoweRuch()
-    spr2()
-def losoweRuchaa():
-    losoweRuch()
-    spr3()
-
 def losoweRuch():  
     ruchy = ["papier", "kamien", "nozyce"]
     randomy = random.choice(ruchy)
     alfa = random
     ruchjawny.configure(text=randomy)
+
+
+def losoweRucha():
+    losoweRuch()
+    spr1()
+def losoweRuchaa():
+    losoweRuch()
+    spr2()
+def losoweRuchaaa():
+    losoweRuch()
+    spr3()
+
 
 def spr1():
     if alfa == "papier":
@@ -56,7 +58,7 @@ baton1.grid(row=0,column=1)
 baton2 = Button(window, text="Kamień", command=losoweRuchaa )
 baton2.grid(row=0,column=2)
 
-baton3 = Button(window, text="Nożyce", command=losoweRuch )
+baton3 = Button(window, text="Nożyce", command=losoweRuchaaa )
 baton3.grid(row=0,column=3)
 
 wynik = Label(window, text="smiesski", bg="red" )
